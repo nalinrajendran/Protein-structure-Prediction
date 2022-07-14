@@ -6,3 +6,30 @@ The following AI project uses reinforcement learning to attempt to resolve a con
 
 One of the biggest issues in bioinformatics is predicting the outcome of the folding process in advance. Solving this problem would have significant ramifications for many fields, from biochemistry to genetic engineering.
 
+
+
+Create a virtual environment first
+
+>> conda create --name pspenv
+>> conda activate pspenv
+
+Installing the pre-Requisites
+>> cd path/to/Protein-Structure-Prediction
+>> pip install -r requirements.txt
+
+>>python3 setup.py install
+
+Running the Model
+
+>> psp-cli train q models/q_agent.pkl --seq HHPPHH
+By default, the model trains upto 50000 episodes(5 iterations), you can modify it by adding --episodes 60000 or anynumber of your wish.
+
+>> psp-cli run q models/q_agent.pkl --seq HPHPH
+
+
+For more options
+
+>>psp-cli -h
+
+
+It displays all the options availabe over there.
