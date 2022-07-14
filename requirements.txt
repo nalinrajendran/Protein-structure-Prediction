@@ -1,0 +1,8 @@
+# REQUIRED PACKAGES
+
+gym
+matplotlib
+numpy
+tensorflow
+termcolor
+docopt
